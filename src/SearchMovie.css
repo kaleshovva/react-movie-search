@@ -1,0 +1,83 @@
+.form {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 10px;
+    max-width: 300px;
+    padding: 30px 0;
+    margin-left: 2px;
+}
+
+.form--input {
+    font-size: 14px;
+    padding: 8px 0;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background: transparent;
+    outline: none;
+    color: #4e4e4e;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.form--button {
+    font-size: 14px;
+    padding: 8px 14px;
+    color: #e4e4e4;
+    background-color: #090e08;
+    border: none;
+    border-radius: 3px;
+}
+
+
+.card-list {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    gap: 50px;
+    width: 100%;
+}
+
+.card {
+    height: 260px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    padding: 30px 20px;
+    position: relative;
+    overflow: visible;
+    transition: transform 0.2s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card--image {
+    width: 160px;
+    height: 230px;
+    border-radius: 2px;
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card--content {
+    margin-left: 190px;
+}
+
+.card--title {
+    margin: 0;
+    font-size: 18px;
+}
+
+.card--release {
+    margin: 8px 0px;
+    font-size: 12px;
+    color: #a3a3a3;
+}
+
+.card--description {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #7a7a7a;
+}
